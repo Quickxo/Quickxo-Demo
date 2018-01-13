@@ -147,6 +147,13 @@ p {
 	margin-bottom: 20px;
 }
 
+p.blocktext {
+    text-align: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 22px;	
+}
+
 a {
 	color: #688dad;
 	text-decoration: none;
