@@ -29,16 +29,14 @@ can quickly replace this mechanism without special difficulty.</p>
 
 <div class="one-half">
 <h3><a href="?command=AjaxGet"><img src="public/images/Get.png" alt="" />jQuery.get()</a></h3>
-<p>A dedicated form is available from the sub-item HTTP GET
-of the Request Methods menu item to submit its parameters
-   with the HTTP GET method.</p>
+<p>A dedicated form is available from the sub-item jQuery.get()
+of the Ajax menu item to submit its parameters with the jQuery HTTP GET method.</p>
 </div>
 
 <div class="one-half last">
-<h3><a href="?command=AjaxPost"><img src="public/images/Post.jpg" alt="" />HTTP POST</a></h3>
-<p>A dedicated form is available from the sub-item HTTP POST
-of the Request Methods menu item to submit its parameters
-   with the HTTP POST method.</p>
+<h3><a href="?command=AjaxPost"><img src="public/images/Post.jpg" alt="" />jQuery.post()</a></h3>
+<p>A dedicated form is available from the sub-item jQuery.post()
+of the Ajax menu item to submit its parameters with the jQuery HTTP POST method.</p>
 </div>
 	
 <?php 
