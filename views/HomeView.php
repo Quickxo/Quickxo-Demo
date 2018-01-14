@@ -71,7 +71,7 @@ pages to avoid code duplication for menu and scripts. Hence, each view
 contains only its specific content: title, main content and scripts. These 
 elements are coded with PHP output buffering for a better readability
 as in a standard HTML page: ob_start(), ob_get_clean() and inclusion of the
-Masterpage at the end of each view.</p>
+<a href="https://github.com/Quickxo/Quickxo-Demo/blob/master/views/MasterPage.php">Masterpage</a> at the end of each view.</p>
 
 <ul>
 	<li>$head: contains the scripts to add to the existing Masterpage Head section.</li>
