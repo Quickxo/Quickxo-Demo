@@ -12,7 +12,7 @@ ob_start();
 <div class="line"></div>
 <div class="intro">The two most used HTTP methods are GET and POST. Quickxo
 handles these methods with the $_REQUEST 'superglobal' at the front controller level.
-This demo Website shows the processing of both there methods.
+This demo website shows the processing of both these methods.
 </div>
 
 <h3>Request methods processing is perfomed in the controllers</h3>
