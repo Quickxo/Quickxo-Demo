@@ -24,7 +24,7 @@ ob_start();
 <h1 class="title">Simple query</h1>
 <div class="line"></div>
 <div class="intro">Northwind database is a fully functional sample SQLite3 database
-store in the model folder under the name Northwind.db.</div>
+stored in the model folder under the name Northwind.db.</div>
 
 <h3>CRUD operations</h3>
 
