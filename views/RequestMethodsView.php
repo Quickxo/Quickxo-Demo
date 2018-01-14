@@ -8,29 +8,19 @@
 ob_start();
 ?>
 
-<h1 class="title">Request Methods</h1>
+<h1 class="title">Request methods</h1>
 <div class="line"></div>
-<div class="intro">HTTP defines methods to indicate the desired action to be 
-performed on the identified resource. The HTTP/1.0 specification defined the 
-GET, POST and HEAD methods and the HTTP/1.1 specification added 5 new methods: 
-OPTIONS, PUT, DELETE, TRACE and CONNECT. <br />
-
-Any client can use any method and the server can 
-be configured to support any combination of methods. There is no limit to the 
-number of methods that can be defined and this allows for future methods to be 
-specified without breaking existing infrastructure. 
-For example, WebDAV defined 7 new methods and RFC 5789 specified 
-the PATCH method.<br />
-
-This demo Website shows 
+<div class="intro">The two most used HTTP methods are GET and POST. Quickxo
+handles these methods with the $_REQUEST 'superglobal' at the front controller level.
+This demo Website shows the processing of both there methods.
 </div>
 
-<h3>Quickxo is designed to accommodate changes</h3>
+<h3>Request methods processing is perfomed in the controllers</h3>
 
-<p>By adapting the method Run of the class Controller from the file Controller.php,
-Quickxo can be extended to support any request method, existing or not.</p>
+<p>Whatever the method, the front controller identifies the controller in charge of
+the processing and forward to it the $_REQUEST 'superglobal'.</p>
 
-<p>By default, Quickxo supports HTTP GET and HTTP POST request methods.</p>
+<p>By default, Quickxo supports HTTP GET and HTTP POST request methods indistinctly.</p>
 
 <div class="one-half">
 <h3><a href="?command=MethodGet"><img src="public/images/Get.png" alt="" />HTTP GET</a></h3>
