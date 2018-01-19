@@ -39,26 +39,33 @@ all the business logic, allowing the view to manage only the design of the webpa
 <div class="clear"></div>
 <div class="line"></div>
 
-<h3>Quickxo is Front Controller based above all</h3>
-<p>Front Controller design pattern often leads to 
-passive views. Once the request is arrived in the controller,
-the view has to be updated, or created. Any other mechanism, like
-asking the view to get an update from the model could result 
-in a delay, at least due to the complexity of the process. 
-Quickxo is straightforward, so is the KISS principle for which 
-most systems work best if they are kept simple rather than made complicated.</p>
+<h3>Quickxo is Front Controller based</h3>
+
+<p>The Front Controller is defined as “a controller that handles 
+all requests for a Web site”.</p>
+
+<p>That for, performance considerations could be a liabilitie
+if it is not taken care closely of performance problems, because if 
+it must perform a database query or a query of an XML document to make decisions, 
+performance could be very slow as a result.</p>
+
+<p>Front Controller design pattern often leads to passive views because 
+it centralizes all business functions and supports infrastructure 
+concerns such as authorization, security, and the rendering of views. 
+The view in the Front Controller pattern is completely passive and is rendered by 
+the command that handles the request.</p>
 
 <ul>
-<li>The client's browser sends a request to the server, mandatorily through <b>index.php</b> which contains the front controller logic. This is 
-the Front Controller design pattern.</li>
-<li>The front controller identifies from the URL the corresponding action command and instanciate it.</li>
-<li>The action class of the requested view starts by updating and querying the model accordingly to the parameters 
-of the request.</li>
-<li>The dynamic content of the requested view is computed and the corresponding view is included
-at the end of the process.</li>
-<li>The view applies the design with the data calculated in the previous step and uses plain PHP as 
-templating language.</li>
-<li>The server sends the corresponding HTML code back to the client's browser.</li>
+	<li>The client's browser sends a request to the server, mandatorily through <b>index.php</b> which contains the front controller logic. This is 
+	the Front Controller design pattern.</li>
+	<li>The front controller identifies from the URL the corresponding action command and instanciate it.</li>
+	<li>The action class of the requested view starts by updating and querying the model accordingly to the parameters 
+	of the request.</li>
+	<li>The dynamic content of the requested view is computed and the corresponding view is included
+	at the end of the process.</li>
+	<li>The view applies the design with the data calculated in the previous step and uses plain PHP as 
+	templating language.</li>
+	<li>The server sends the corresponding HTML code back to the client's browser.</li>
 </ul>
 
 <div class="clear"></div>
@@ -92,12 +99,12 @@ to include the shared content.<br><br>
 <h3>Model</h3>
 <ul class="popular-posts">
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/tree/master/models"><img src="public/images/art/folder.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/tree/master/models">Folder: models</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/models"><img src="public/images/folder.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/models">Folder: models</a></h5>
 		<span>Class: Db</span>
 	</li>			
 	<li>
-		<a href="https://www.sqlite.org/"><img src="public/images/art/sqlite.png" alt="" /></a>
+		<a href="https://www.sqlite.org/"><img src="public/images/sqlite.png" alt="" /></a>
 		<h5><a href="https://www.sqlite.org/">Database: SQLite 3</a></h5>
 		<span>Northwind</span>
 	</li>
@@ -107,14 +114,14 @@ to include the shared content.<br><br>
 <h3>View</h3>
 <ul class="popular-posts">
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/tree/master/views"><img src="public/images/art/folder.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/tree/master/views">Folder: views</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/views"><img src="public/images/folder.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/views">Folder: views</a></h5>
 		<span>Class: None</span>
 		<span>Plain PHP, HTML, CSS, Javascript</span>
 	</li>	
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/tree/master/public"><img src="public/images/art/folder.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/tree/master/public">Folder: public</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/public"><img src="public/images/folder.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/public">Folder: public</a></h5>
 		<span>Class: None</span>
 		<span>Images, CSS, Javascript, resources</span>
 	</li>			
@@ -125,25 +132,25 @@ to include the shared content.<br><br>
 <h3>Controller</h3>
 <ul class="popular-posts">
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/blob/master/index.php"><img src="public/images/art/file.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/blob/master/index.php">File: index.php</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/blob/master/index.php"><img src="public/images/file.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/blob/master/index.php">File: index.php</a></h5>
 		<span>Class: None</span><br />
 		<span>Front Controller</span>
 	</li>	
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/tree/master/controllers"><img src="public/images/art/folder.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/tree/master/controllers">Folder: controllers</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/controllers"><img src="public/images/folder.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/controllers">Folder: controllers</a></h5>
 		<span>Class: Controller</span>
 	</li>			
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/tree/master/commands"><img src="public/images/art/folder.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/tree/master/commands">Folder: commands</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/controllers/commands"><img src="public/images/folder.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/controllers/commands">Folder: commands</a></h5>
 		<span>Class: Command</span>
 		<span>Class: Any extended from Command</span>
 	</li>	
 	<li>
-		<a href="https://github.com/Quickxo/Quickxo/tree/master/commands/classes"><img src="public/images/art/folder.png" alt="" /></a>				
-		<h5><a href="https://github.com/Quickxo/Quickxo/tree/master/commands/classes">Folder: classes</a></h5>
+		<a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/controllers/commands/classes"><img src="public/images/folder.png" alt="" /></a>				
+		<h5><a href="https://github.com/Quickxo/Quickxo-Demo/tree/master/controllers/commands/classes">Folder: classes</a></h5>
 		<span>Class: Dedicated location for controllers helper classes</span>
 	</li>
 </ul>
