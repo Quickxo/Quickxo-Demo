@@ -41,19 +41,33 @@ all the business logic, allowing the view to manage only the design of the webpa
 
 <h3>Quickxo is Front Controller based</h3>
 
-<p>The Front Controller is defined as “a controller that handles 
-all requests for a Web site”.</p>
-
-<p>That for, performance considerations could be a liabilitie
+<p>A Front Controller is defined as “a controller that handles 
+all requests for a Web site”. That for, performance considerations could be a liabilitie
 if it is not taken care closely of performance problems, because if 
 it must perform a database query or a query of an XML document to make decisions, 
 performance could be very slow as a result.</p>
 
-<p>Front Controller design pattern often leads to passive views because 
-it centralizes all business functions and supports infrastructure 
-concerns such as authorization, security, and the rendering of views. 
-The view in the Front Controller pattern is completely passive and is rendered by 
+<p>Front Controller design pattern often leads to passive views. It 
+centralizes all business functions and supports infrastructure 
+concerns such as authorization, security, and the rendering of views by instanciating
+ view controller (MVP presenter) which are bound to the model. Hence  
+the view in the Front Controller pattern can easily be completely passive and is rendered by 
 the command that handles the request.</p>
+
+<p>Removing all business logic from the views simplifies the testing of the views because they can 
+can be tested independently from the controller. For the developer, it is a very useful design 
+for three main reasons:</p>
+<ul>
+	<li>99% of the time, the location of a bug is in the controller. There is even 
+	no need to open the view in the IDE to find and correct it.</li>
+	<li>Testing carefully the controller will naturally produce robustness in all the
+	application.</li>
+	<li>Developers and Web designers can work efficiently in a collaborative environment.</li>	
+</ul>
+
+<h3>Quickxo's operating</h3>
+
+<p>The operating is sequentially organized as bellow:</p>
 
 <ul>
 	<li>The client's browser sends a request to the server, mandatorily through <b>index.php</b> which contains the front controller logic. This is 
