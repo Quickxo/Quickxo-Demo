@@ -63,7 +63,7 @@
         		<li><a href="?command=Soap" <?php echo ($page == "Soap" ? 'class="active"' : '')?>>SOAP</a></li>
         		<li><a href="?command=Rest" <?php echo ($page == "Rest" ? 'class="active"' : '')?>>REST</a></li>
         	</ul>
-		</li>
+		</li>		
       </ul>
     </div>
 	</div>
